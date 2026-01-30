@@ -17,3 +17,6 @@ while True:
         break
     else:
         print("Invalid choice")
+elif choice == "4":
+    num = int(input("Enter task number to delete: "))
+    tasks.pop(num - 1)   # No validation → BUG
